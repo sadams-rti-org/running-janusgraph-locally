@@ -19,7 +19,7 @@ of memory to Docker using the Docker application settings.
 
  
 
-![](/Users/sadams/Desktop/graphics/janusgraph-logo-small.png)
+![](https://github.com/sadams-rti-org/running-janusgraph-locally/blob/master/details/janusgraph-logo-small.png)
 
 Instructions for installing and using JanusGraph
 ------------------------------------------------
@@ -61,7 +61,7 @@ git clone https://github.com/sadams-rti-org/running-janusgraph-locally
 
  
 
-![](/Users/sadams/Desktop/graphics/tinkertools-logo-small.png)
+![](https://github.com/sadams-rti-org/running-janusgraph-locally/blob/master/details/tinkertools-logo-small.png)
 
 Instructions for using Tinkertools
 ----------------------------------
