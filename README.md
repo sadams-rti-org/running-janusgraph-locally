@@ -28,27 +28,21 @@ Instructions for installing and using JanusGraph
 
 2.  Navigate to where you want to install JanusGraph
 
-3.  Create a folder and move into it
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-mkdir my-janus
-cd my-janus
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-4.  Clone this repository
+3.  Clone this repository, renaming it as desired
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 git clone https://github.com/sadams-rti-org/running-janusgraph-locally
+mv running-janusgraph-locally my-janusgraph
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-5.  Use one the following commands as desired to run/stop JanusGraph:
+1.  Use one the following commands as desired to run/stop JanusGraph:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ./janus-up
 ./janus-down
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-6.  Once you have run JanusGraph, all your data is stored in the ./details/data
+1.  Once you have run JanusGraph, all your data is stored in the ./details/data
     folder. The next time you start JanusGaph, it will attach to this data
     automatically. If you desire to erase this data and start over, use the
     following command:
