@@ -35,14 +35,14 @@ git clone https://github.com/sadams-rti-org/running-janusgraph-locally
 mv running-janusgraph-locally my-janusgraph
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-1.  Use one the following commands as desired to run/stop JanusGraph:
+4.  Use one the following commands as desired to run/stop JanusGraph:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ./janus-up
 ./janus-down
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-1.  Once you have run JanusGraph, all your data is stored in the ./details/data
+5.  Once you have run JanusGraph, all your data is stored in the ./details/data
     folder. The next time you start JanusGaph, it will attach to this data
     automatically. If you desire to erase this data and start over, use the
     following command:
