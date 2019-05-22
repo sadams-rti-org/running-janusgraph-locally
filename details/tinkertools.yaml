@@ -9,7 +9,7 @@ services:
       - "1122:3000"
     environment:
       - ROOT_URL=http://tinker
-      - MONGO_URL=mongodb://tinkertools:tinkertools@mongo:27017/tinkertools
+      - MONGO_URL=mongodb://mongo:27017/tinkertools
     networks:
       - tinkernet
 
