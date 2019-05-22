@@ -83,7 +83,7 @@ the following command:
 ./tinkertools-erase
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
- You can find short how-to videos for TInkertools
+ You can find short how-to videos for Tinkertools
 [here](https://researchtriangleinstitute.sharepoint.com/sites/ai/Tinkertools%20Videos/Forms/AllItems.aspx)
 
  
