@@ -41,10 +41,11 @@ mv running-janusgraph-locally my-janusgraph
 ./janus-up
 ./janus-down
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 The websocket gremlin API will be available at port 8182:
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~
 ws://localhost:8182/gremlin
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~
 
 5.  Once you have run JanusGraph, all your data is stored in the ./details/data
     folder. The next time you start JanusGaph, it will attach to this data
@@ -82,17 +83,19 @@ the following command:
 ./tinkertools-erase
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
- 
+ You can find short how-to videos for TInkertools
+[here](https://researchtriangleinstitute.sharepoint.com/sites/ai/Tinkertools%20Videos/Forms/AllItems.aspx)
 
+ 
 
 Reading and writing graph data to and from files
 ------------------------------------------------
 
 The folder at ./details/graph-io in your installation is bound to
-/opt/janusgraph/graph-io inside the container hosting Janusgraph.  This means
-any file in the ./details/graph-io folder is visible to your Gremlin/Groovy
-scripts at /opt/janusgraph/graph-io.  You can use FTP to move files to and from
-the server hosting Janusgraph.
+/opt/janusgraph/graph-io inside the container hosting Janusgraph. This means any
+file in the ./details/graph-io folder is visible to your Gremlin/Groovy scripts
+at /opt/janusgraph/graph-io. You can use FTP to move files to and from the
+server hosting Janusgraph.
 
  
 
