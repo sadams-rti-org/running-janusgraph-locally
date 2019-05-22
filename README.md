@@ -74,6 +74,8 @@ janusgraph databases:
 ./tinkertools-down
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+You can launch the Tinkertools interface in your browser via http://localhost:1122
+
 Once you have run Tinkertools, your script database will be stored in
 ./details/data/mongodb. The next time you start Tinkertools, it will attach to
 this data automatically. If you desire to erase this data and start over, use
