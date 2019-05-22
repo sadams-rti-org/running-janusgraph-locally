@@ -79,3 +79,66 @@ the following command:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
  
+
+
+Reading and writing graph data to and from files
+------------------------------------------------
+
+The folder at ./details/graph-io in your installation is bound to
+/opt/janusgraph/graph-io inside the container hosting Janusgraph.  This means
+any file in the ./details/graph-io folder is visible to your Gremlin/Groovy
+scripts at /opt/janusgraph/graph-io.  You can use FTP to move files to and from
+the server hosting Janusgraph.
+
+ 
+
+In this distribution there are two graph files provided as examples:
+
+-   air-routes-latest.graphml
+
+-   ohio-counties-with-adjoins-edges.graphson
+
+ 
+
+To load these into your database, use gremlin scripts like the following:
+
+For GraphML format:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+graph.io(IoCore.graphml()).readGraph("/opt/janusgraph/graph-io/air-routes-latest.graphml")
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+or for GraphSON3 format:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+graph.io(IoCore.graphson()).readGraph("/opt/janusgraph/graph-io/ohio-counties-with-adjoins-edges.graphson")
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ 
+
+To save your graph to a file, use one of these scripts depending on the output
+format desired:
+
+For GraphML format:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+graph.io(IoCore.graphml()).writeGraph("/opt/janusgraph/graph-io/my-graph.xml")
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+For GraphSON3 format:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+graph.io(graphson()).writeGraph("/opt/janusgraph/graph-io/my-graph.graphson")
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+For Gryo(Kryo) format:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+graph.io(gryo()).writeGraph("/opt/janusgraph/graph-io/my-graph.kryo")
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Which can then be read using:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+graph.io(gryo()).readGraph("/opt/janusgraph/graph-io/my-graph.kryo")
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
