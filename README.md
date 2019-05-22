@@ -41,6 +41,10 @@ mv running-janusgraph-locally my-janusgraph
 ./janus-up
 ./janus-down
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The websocket gremlin API will be available at port 8182:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ws://localhost:8182/gremlin
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 5.  Once you have run JanusGraph, all your data is stored in the ./details/data
     folder. The next time you start JanusGaph, it will attach to this data
